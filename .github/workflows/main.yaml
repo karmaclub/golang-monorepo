@@ -1,9 +1,12 @@
-name: main
-
+name: Build
+run-name: Build
 on:
   push:
     branches:
-      - master
+      - "master"
+  pull_request:
+    branches:
+      - "**"
 
 jobs:
   deploy:
